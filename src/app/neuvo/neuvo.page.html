@@ -1,0 +1,25 @@
+
+<ion-content>
+  <ion-item>
+    <ion-label position="stacked">Nombre de Producto</ion-label>
+    <ion-input id="myname"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Número de Producto</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Fecha de Caducidad</ion-label>
+  <ion-datetime value="2019-10-01T15:43:40.394Z" display-timezone="utc"> my date</ion-datetime>
+</ion-item>
+<div>
+  <ion-input type="text" [(ngModel)]="name" text-right id="input" ></ion-input>
+
+  <ion-button color="success" expand="block" onclick="getValues($name)">Añadir
+    <ion-icon name="bag-check-sharp"></ion-icon>
+  </ion-button>
+</div>
+<h2>{{nombreProducto}}</h2>
+
+
+</ion-content>
